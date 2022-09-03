@@ -1,6 +1,14 @@
-from email.policy import default
-from PySide6.QtWidgets import QWidget, QLineEdit, QComboBox, QHBoxLayout, QSizePolicy
-from PySide6.QtGui import QIntValidator
+import base64
+from typing import List
+from typing_extensions import Self
+from PySide6.QtWidgets import (
+    QWidget,
+    QDoubleSpinBox,
+    QComboBox,
+    QHBoxLayout,
+    QSizePolicy,
+)
+from PySide6.QtGui import QIcon, QPixmap
 from PySide6.QtCore import QSize
 from utilities.loader import get_pppdata
 
@@ -19,19 +27,14 @@ class EntryWidget(QWidget):
 
         layout = QHBoxLayout(self)
 
-        self.amount = QLineEdit(self)
+        self.amount = QDoubleSpinBox(self)
         self.amount.setObjectName("valueInput")
-        self.amount.setValidator(QIntValidator(self))
-        self.amount.setText(self.defaults.get("prev_value", ""))
-        self.amount.setPlaceholderText("0")
-        # self.amount.textChanged.connect(self.calculatePPP)
+        self.amount.setButtonSymbols(QDoubleSpinBox.NoButtons)
 
         self.selector = QComboBox(self)
         self.selector.setObjectName("chooser")
 
-        self.ppp_data = get_pppdata()
-
-        self.selector.addItems(self.ppp_data.keys())
+        self.add_countries(self.selector)
         self.selector.setMaxVisibleItems(10)
         sp = QSizePolicy()
         sp.setHorizontalStretch(0)
@@ -41,3 +44,17 @@ class EntryWidget(QWidget):
 
         layout.addWidget(self.selector)
         layout.addWidget(self.amount)
+
+    def add_countries(self: Self, selector: QComboBox) -> None:
+        countries = get_pppdata()
+        for country_name, data in countries.items():
+            image_blob = base64.b64decode(data["flag"])
+            image = QPixmap()
+            image.loadFromData(image_blob)
+            icon = QIcon(image)
+            selector.addItem(
+                icon,
+                "{name} - {currency}".format(
+                    name=country_name, currency=data["currency"]["name"]
+                ),
+            )
