@@ -5,10 +5,15 @@ name = "pypi"
 
 [scripts]
 dev = "python src/app.py -style fusion"
+lint = "black src"
+sort = "isort src"
 
 [packages]
+pyside6 = "*"
 
 [dev-packages]
+black = "*"
+isort = "*"
 
 [requires]
 python_version = "3.9"
