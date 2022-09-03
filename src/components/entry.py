@@ -22,7 +22,8 @@ class EntryWidget(QWidget):
         self.amount = QLineEdit(self)
         self.amount.setObjectName("valueInput")
         self.amount.setValidator(QIntValidator(self))
-        self.amount.setText(self.defaults.get("prev_value", "0"))
+        self.amount.setText(self.defaults.get("prev_value", ""))
+        self.amount.setPlaceholderText("0")
         # self.amount.textChanged.connect(self.calculatePPP)
 
         self.selector = QComboBox(self)
@@ -34,6 +35,7 @@ class EntryWidget(QWidget):
         self.selector.setMaxVisibleItems(10)
         sp = QSizePolicy()
         sp.setHorizontalStretch(0)
+        sp.setHorizontalPolicy(QSizePolicy.Minimum)
         self.selector.setSizePolicy(sp)
         # self.selector.currentTextChanged.connect()
 
