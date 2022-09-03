@@ -35,12 +35,11 @@ class EntryWidget(QWidget):
         self.selector.setObjectName("chooser")
 
         self.add_countries(self.selector)
-        self.selector.setMaxVisibleItems(10)
+        self.selector.setMaxVisibleItems(15)
+
         sp = QSizePolicy()
-        sp.setHorizontalStretch(0)
-        sp.setHorizontalPolicy(QSizePolicy.Minimum)
+        sp.setHorizontalPolicy(QSizePolicy.Maximum)
         self.selector.setSizePolicy(sp)
-        # self.selector.currentTextChanged.connect()
 
         layout.addWidget(self.selector)
         layout.addWidget(self.amount)
