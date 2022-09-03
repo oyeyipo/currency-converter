@@ -1,0 +1,1181 @@
+{
+    "lastupdated": "2022-08-27",
+    "data": {
+        "Afghanistan": {
+            "id": "AF",
+            "countryiso3code": "AFG",
+            "ppp": 19.1231702665405,
+            "date": "2020"
+        },
+        "Albania": {
+            "id": "AL",
+            "countryiso3code": "ALB",
+            "ppp": 42.969258903305,
+            "date": "2021"
+        },
+        "Algeria": {
+            "id": "DZ",
+            "countryiso3code": "DZA",
+            "ppp": 42.2448959754625,
+            "date": "2021"
+        },
+        "Angola": {
+            "id": "AO",
+            "countryiso3code": "AGO",
+            "ppp": 220.268715322282,
+            "date": "2021"
+        },
+        "Antigua and Barbuda": {
+            "id": "AG",
+            "countryiso3code": "ATG",
+            "ppp": 2.028070497198,
+            "date": "2021"
+        },
+        "Argentina": {
+            "id": "AR",
+            "countryiso3code": "ARG",
+            "ppp": 43.1354088529901,
+            "date": "2021"
+        },
+        "Armenia": {
+            "id": "AM",
+            "countryiso3code": "ARM",
+            "ppp": 160.804583727761,
+            "date": "2021"
+        },
+        "Aruba": {
+            "id": "AW",
+            "countryiso3code": "ABW",
+            "ppp": 1.34233774245478,
+            "date": "2020"
+        },
+        "Australia": {
+            "id": "AU",
+            "countryiso3code": "AUS",
+            "ppp": 1.438979,
+            "date": "2021"
+        },
+        "Austria": {
+            "id": "AT",
+            "countryiso3code": "AUT",
+            "ppp": 0.770831,
+            "date": "2021"
+        },
+        "Azerbaijan": {
+            "id": "AZ",
+            "countryiso3code": "AZE",
+            "ppp": 0.577726650907169,
+            "date": "2021"
+        },
+        "Bahamas, The": {
+            "id": "BS",
+            "countryiso3code": "BHS",
+            "ppp": 0.827943328415102,
+            "date": "2021"
+        },
+        "Bahrain": {
+            "id": "BH",
+            "countryiso3code": "BHR",
+            "ppp": 0.184081657106325,
+            "date": "2021"
+        },
+        "Bangladesh": {
+            "id": "BD",
+            "countryiso3code": "BGD",
+            "ppp": 32.0993820946605,
+            "date": "2021"
+        },
+        "Barbados": {
+            "id": "BB",
+            "countryiso3code": "BRB",
+            "ppp": 2.29926366272929,
+            "date": "2021"
+        },
+        "Belarus": {
+            "id": "BY",
+            "countryiso3code": "BLR",
+            "ppp": 0.8543529997112,
+            "date": "2021"
+        },
+        "Belgium": {
+            "id": "BE",
+            "countryiso3code": "BEL",
+            "ppp": 0.742723,
+            "date": "2021"
+        },
+        "Belize": {
+            "id": "BZ",
+            "countryiso3code": "BLZ",
+            "ppp": 1.27733099966289,
+            "date": "2021"
+        },
+        "Benin": {
+            "id": "BJ",
+            "countryiso3code": "BEN",
+            "ppp": 209.042140897802,
+            "date": "2021"
+        },
+        "Bermuda": {
+            "id": "BM",
+            "countryiso3code": "BMU",
+            "ppp": 1.30140209853527,
+            "date": "2021"
+        },
+        "Bhutan": {
+            "id": "BT",
+            "countryiso3code": "BTN",
+            "ppp": 19.9793589469701,
+            "date": "2020"
+        },
+        "Bolivia": {
+            "id": "BO",
+            "countryiso3code": "BOL",
+            "ppp": 2.61305609641246,
+            "date": "2021"
+        },
+        "Bosnia and Herzegovina": {
+            "id": "BA",
+            "countryiso3code": "BIH",
+            "ppp": 0.678900368412622,
+            "date": "2021"
+        },
+        "Botswana": {
+            "id": "BW",
+            "countryiso3code": "BWA",
+            "ppp": 4.62768586878898,
+            "date": "2021"
+        },
+        "Brazil": {
+            "id": "BR",
+            "countryiso3code": "BRA",
+            "ppp": 2.52613133659202,
+            "date": "2021"
+        },
+        "British Virgin Islands": {
+            "id": "VG",
+            "countryiso3code": "VGB",
+            "ppp": 1.06877851486206,
+            "date": "2017"
+        },
+        "Brunei Darussalam": {
+            "id": "BN",
+            "countryiso3code": "BRN",
+            "ppp": 0.639882817098749,
+            "date": "2021"
+        },
+        "Bulgaria": {
+            "id": "BG",
+            "countryiso3code": "BGR",
+            "ppp": 0.720480271237119,
+            "date": "2021"
+        },
+        "Burkina Faso": {
+            "id": "BF",
+            "countryiso3code": "BFA",
+            "ppp": 206.805692102691,
+            "date": "2021"
+        },
+        "Burundi": {
+            "id": "BI",
+            "countryiso3code": "BDI",
+            "ppp": 710.133320666739,
+            "date": "2021"
+        },
+        "Cabo Verde": {
+            "id": "CV",
+            "countryiso3code": "CPV",
+            "ppp": 45.7035766014136,
+            "date": "2021"
+        },
+        "Cambodia": {
+            "id": "KH",
+            "countryiso3code": "KHM",
+            "ppp": 1392.45862100857,
+            "date": "2021"
+        },
+        "Cameroon": {
+            "id": "CM",
+            "countryiso3code": "CMR",
+            "ppp": 226.712347642433,
+            "date": "2021"
+        },
+        "Canada": {
+            "id": "CA",
+            "countryiso3code": "CAN",
+            "ppp": 1.253066,
+            "date": "2021"
+        },
+        "Cayman Islands": {
+            "id": "KY",
+            "countryiso3code": "CYM",
+            "ppp": 0.981214982406923,
+            "date": "2020"
+        },
+        "Central African Republic": {
+            "id": "CF",
+            "countryiso3code": "CAF",
+            "ppp": 277.927267635292,
+            "date": "2021"
+        },
+        "Chad": {
+            "id": "TD",
+            "countryiso3code": "TCD",
+            "ppp": 242.800970212301,
+            "date": "2021"
+        },
+        "Chile": {
+            "id": "CL",
+            "countryiso3code": "CHL",
+            "ppp": 430.349555,
+            "date": "2021"
+        },
+        "China": {
+            "id": "CN",
+            "countryiso3code": "CHN",
+            "ppp": 4.18734161232525,
+            "date": "2021"
+        },
+        "Colombia": {
+            "id": "CO",
+            "countryiso3code": "COL",
+            "ppp": 1358.650605,
+            "date": "2021"
+        },
+        "Comoros": {
+            "id": "KM",
+            "countryiso3code": "COM",
+            "ppp": 189.295984892368,
+            "date": "2021"
+        },
+        "Congo, Dem. Rep.": {
+            "id": "CD",
+            "countryiso3code": "COD",
+            "ppp": 953.435097511451,
+            "date": "2021"
+        },
+        "Congo, Rep.": {
+            "id": "CG",
+            "countryiso3code": "COG",
+            "ppp": 339.427934493866,
+            "date": "2021"
+        },
+        "Costa Rica": {
+            "id": "CR",
+            "countryiso3code": "CRI",
+            "ppp": 332.026908,
+            "date": "2021"
+        },
+        "Cote d'Ivoire": {
+            "id": "CI",
+            "countryiso3code": "CIV",
+            "ppp": 240.750606182979,
+            "date": "2021"
+        },
+        "Croatia": {
+            "id": "HR",
+            "countryiso3code": "HRV",
+            "ppp": 3.27384003417161,
+            "date": "2021"
+        },
+        "Curacao": {
+            "id": "CW",
+            "countryiso3code": "CUW",
+            "ppp": 1.39433833823242,
+            "date": "2020"
+        },
+        "Cyprus": {
+            "id": "CY",
+            "countryiso3code": "CYP",
+            "ppp": 0.611900662074857,
+            "date": "2021"
+        },
+        "Czech Republic": {
+            "id": "CZ",
+            "countryiso3code": "CZE",
+            "ppp": 12.919712,
+            "date": "2021"
+        },
+        "Denmark": {
+            "id": "DK",
+            "countryiso3code": "DNK",
+            "ppp": 6.593618,
+            "date": "2021"
+        },
+        "Djibouti": {
+            "id": "DJ",
+            "countryiso3code": "DJI",
+            "ppp": 100.881356683089,
+            "date": "2021"
+        },
+        "Dominica": {
+            "id": "DM",
+            "countryiso3code": "DMA",
+            "ppp": 1.70470667966151,
+            "date": "2021"
+        },
+        "Dominican Republic": {
+            "id": "DO",
+            "countryiso3code": "DOM",
+            "ppp": 23.7042725381536,
+            "date": "2021"
+        },
+        "Ecuador": {
+            "id": "EC",
+            "countryiso3code": "ECU",
+            "ppp": 0.508942387803378,
+            "date": "2021"
+        },
+        "Egypt, Arab Rep.": {
+            "id": "EG",
+            "countryiso3code": "EGY",
+            "ppp": 4.5673597970514,
+            "date": "2021"
+        },
+        "El Salvador": {
+            "id": "SV",
+            "countryiso3code": "SLV",
+            "ppp": 0.455956637141167,
+            "date": "2021"
+        },
+        "Equatorial Guinea": {
+            "id": "GQ",
+            "countryiso3code": "GNQ",
+            "ppp": 258.870705946061,
+            "date": "2021"
+        },
+        "Eritrea": {
+            "id": "ER",
+            "countryiso3code": "ERI",
+            "ppp": 5.46990434868798,
+            "date": "2017"
+        },
+        "Estonia": {
+            "id": "EE",
+            "countryiso3code": "EST",
+            "ppp": 0.546689,
+            "date": "2021"
+        },
+        "Eswatini": {
+            "id": "SZ",
+            "countryiso3code": "SWZ",
+            "ppp": 6.34791952428668,
+            "date": "2021"
+        },
+        "Ethiopia": {
+            "id": "ET",
+            "countryiso3code": "ETH",
+            "ppp": 14.1668407806467,
+            "date": "2021"
+        },
+        "Fiji": {
+            "id": "FJ",
+            "countryiso3code": "FJI",
+            "ppp": 0.873234604987692,
+            "date": "2021"
+        },
+        "Finland": {
+            "id": "FI",
+            "countryiso3code": "FIN",
+            "ppp": 0.829754,
+            "date": "2021"
+        },
+        "France": {
+            "id": "FR",
+            "countryiso3code": "FRA",
+            "ppp": 0.725323,
+            "date": "2021"
+        },
+        "Gabon": {
+            "id": "GA",
+            "countryiso3code": "GAB",
+            "ppp": 285.023968119085,
+            "date": "2021"
+        },
+        "Gambia, The": {
+            "id": "GM",
+            "countryiso3code": "GMB",
+            "ppp": 17.6753793418291,
+            "date": "2021"
+        },
+        "Georgia": {
+            "id": "GE",
+            "countryiso3code": "GEO",
+            "ppp": 0.955514339770497,
+            "date": "2021"
+        },
+        "Germany": {
+            "id": "DE",
+            "countryiso3code": "DEU",
+            "ppp": 0.741488,
+            "date": "2021"
+        },
+        "Ghana": {
+            "id": "GH",
+            "countryiso3code": "GHA",
+            "ppp": 2.34190569320969,
+            "date": "2021"
+        },
+        "Greece": {
+            "id": "GR",
+            "countryiso3code": "GRC",
+            "ppp": 0.547807,
+            "date": "2021"
+        },
+        "Grenada": {
+            "id": "GD",
+            "countryiso3code": "GRD",
+            "ppp": 1.6071110079715,
+            "date": "2021"
+        },
+        "Guatemala": {
+            "id": "GT",
+            "countryiso3code": "GTM",
+            "ppp": 3.97879058485382,
+            "date": "2021"
+        },
+        "Guinea": {
+            "id": "GN",
+            "countryiso3code": "GIN",
+            "ppp": 4014.57787555689,
+            "date": "2021"
+        },
+        "Guinea-Bissau": {
+            "id": "GW",
+            "countryiso3code": "GNB",
+            "ppp": 219.149576244071,
+            "date": "2021"
+        },
+        "Guyana": {
+            "id": "GY",
+            "countryiso3code": "GUY",
+            "ppp": 79.801974792432,
+            "date": "2021"
+        },
+        "Haiti": {
+            "id": "HT",
+            "countryiso3code": "HTI",
+            "ppp": 47.0751776420801,
+            "date": "2021"
+        },
+        "Honduras": {
+            "id": "HN",
+            "countryiso3code": "HND",
+            "ppp": 10.8742613291228,
+            "date": "2021"
+        },
+        "Hong Kong SAR, China": {
+            "id": "HK",
+            "countryiso3code": "HKG",
+            "ppp": 5.85125166912907,
+            "date": "2021"
+        },
+        "Hungary": {
+            "id": "HU",
+            "countryiso3code": "HUN",
+            "ppp": 154.840118,
+            "date": "2021"
+        },
+        "Iceland": {
+            "id": "IS",
+            "countryiso3code": "ISL",
+            "ppp": 150.642103,
+            "date": "2021"
+        },
+        "India": {
+            "id": "IN",
+            "countryiso3code": "IND",
+            "ppp": 23.1381376297914,
+            "date": "2021"
+        },
+        "Indonesia": {
+            "id": "ID",
+            "countryiso3code": "IDN",
+            "ppp": 4758.70095734828,
+            "date": "2021"
+        },
+        "Iran, Islamic Rep.": {
+            "id": "IR",
+            "countryiso3code": "IRN",
+            "ppp": 29704.3097274281,
+            "date": "2020"
+        },
+        "Iraq": {
+            "id": "IQ",
+            "countryiso3code": "IRQ",
+            "ppp": 703.256969661832,
+            "date": "2021"
+        },
+        "Ireland": {
+            "id": "IE",
+            "countryiso3code": "IRL",
+            "ppp": 0.787487,
+            "date": "2021"
+        },
+        "Israel": {
+            "id": "IL",
+            "countryiso3code": "ISR",
+            "ppp": 3.799707,
+            "date": "2021"
+        },
+        "Italy": {
+            "id": "IT",
+            "countryiso3code": "ITA",
+            "ppp": 0.654354,
+            "date": "2021"
+        },
+        "Jamaica": {
+            "id": "JM",
+            "countryiso3code": "JAM",
+            "ppp": 69.3233219817447,
+            "date": "2021"
+        },
+        "Japan": {
+            "id": "JP",
+            "countryiso3code": "JPN",
+            "ppp": 100.41164,
+            "date": "2021"
+        },
+        "Jordan": {
+            "id": "JO",
+            "countryiso3code": "JOR",
+            "ppp": 0.285622987647594,
+            "date": "2021"
+        },
+        "Kazakhstan": {
+            "id": "KZ",
+            "countryiso3code": "KAZ",
+            "ppp": 149.536641439616,
+            "date": "2021"
+        },
+        "Kenya": {
+            "id": "KE",
+            "countryiso3code": "KEN",
+            "ppp": 43.7989404589708,
+            "date": "2021"
+        },
+        "Kiribati": {
+            "id": "KI",
+            "countryiso3code": "KIR",
+            "ppp": 1.01334534403832,
+            "date": "2020"
+        },
+        "Korea, Rep.": {
+            "id": "KR",
+            "countryiso3code": "KOR",
+            "ppp": 847.456839,
+            "date": "2021"
+        },
+        "Kosovo": {
+            "id": "XK",
+            "countryiso3code": "XKX",
+            "ppp": 0.331433135883778,
+            "date": "2021"
+        },
+        "Kuwait": {
+            "id": "KW",
+            "countryiso3code": "KWT",
+            "ppp": 0.160610173340519,
+            "date": "2020"
+        },
+        "Kyrgyz Republic": {
+            "id": "KG",
+            "countryiso3code": "KGZ",
+            "ppp": 20.4286071569683,
+            "date": "2021"
+        },
+        "Lao PDR": {
+            "id": "LA",
+            "countryiso3code": "LAO",
+            "ppp": 2852.4843642783,
+            "date": "2021"
+        },
+        "Latvia": {
+            "id": "LV",
+            "countryiso3code": "LVA",
+            "ppp": 0.50634,
+            "date": "2021"
+        },
+        "Lebanon": {
+            "id": "LB",
+            "countryiso3code": "LBN",
+            "ppp": 2958.13367858618,
+            "date": "2021"
+        },
+        "Lesotho": {
+            "id": "LS",
+            "countryiso3code": "LSO",
+            "ppp": 6.42702210564422,
+            "date": "2021"
+        },
+        "Liberia": {
+            "id": "LR",
+            "countryiso3code": "LBR",
+            "ppp": 0.433465958956787,
+            "date": "2021"
+        },
+        "Libya": {
+            "id": "LY",
+            "countryiso3code": "LBY",
+            "ppp": 1.18930529095933,
+            "date": "2021"
+        },
+        "Lithuania": {
+            "id": "LT",
+            "countryiso3code": "LTU",
+            "ppp": 0.464377,
+            "date": "2021"
+        },
+        "Luxembourg": {
+            "id": "LU",
+            "countryiso3code": "LUX",
+            "ppp": 0.851323,
+            "date": "2021"
+        },
+        "Macao SAR, China": {
+            "id": "MO",
+            "countryiso3code": "MAC",
+            "ppp": 4.92698950842162,
+            "date": "2021"
+        },
+        "Madagascar": {
+            "id": "MG",
+            "countryiso3code": "MDG",
+            "ppp": 1205.85563142715,
+            "date": "2021"
+        },
+        "Malawi": {
+            "id": "MW",
+            "countryiso3code": "MWI",
+            "ppp": 312.311278297117,
+            "date": "2021"
+        },
+        "Malaysia": {
+            "id": "MY",
+            "countryiso3code": "MYS",
+            "ppp": 1.59075539384207,
+            "date": "2021"
+        },
+        "Maldives": {
+            "id": "MV",
+            "countryiso3code": "MDV",
+            "ppp": 7.58392206696362,
+            "date": "2021"
+        },
+        "Mali": {
+            "id": "ML",
+            "countryiso3code": "MLI",
+            "ppp": 207.98672009938,
+            "date": "2021"
+        },
+        "Malta": {
+            "id": "MT",
+            "countryiso3code": "MLT",
+            "ppp": 0.589317368786374,
+            "date": "2021"
+        },
+        "Marshall Islands": {
+            "id": "MH",
+            "countryiso3code": "MHL",
+            "ppp": 0.997487661873474,
+            "date": "2021"
+        },
+        "Mauritania": {
+            "id": "MR",
+            "countryiso3code": "MRT",
+            "ppp": 11.2990086222959,
+            "date": "2021"
+        },
+        "Mauritius": {
+            "id": "MU",
+            "countryiso3code": "MUS",
+            "ppp": 16.519472523476,
+            "date": "2021"
+        },
+        "Mexico": {
+            "id": "MX",
+            "countryiso3code": "MEX",
+            "ppp": 10.043314,
+            "date": "2021"
+        },
+        "Micronesia, Fed. Sts.": {
+            "id": "FM",
+            "countryiso3code": "FSM",
+            "ppp": 0.9809341238682,
+            "date": "2021"
+        },
+        "Moldova": {
+            "id": "MD",
+            "countryiso3code": "MDA",
+            "ppp": 6.00933523032775,
+            "date": "2021"
+        },
+        "Mongolia": {
+            "id": "MN",
+            "countryiso3code": "MNG",
+            "ppp": 1004.55150905459,
+            "date": "2021"
+        },
+        "Montenegro": {
+            "id": "ME",
+            "countryiso3code": "MNE",
+            "ppp": 0.347427785786748,
+            "date": "2021"
+        },
+        "Morocco": {
+            "id": "MA",
+            "countryiso3code": "MAR",
+            "ppp": 3.85958299574082,
+            "date": "2021"
+        },
+        "Mozambique": {
+            "id": "MZ",
+            "countryiso3code": "MOZ",
+            "ppp": 24.4072565804242,
+            "date": "2021"
+        },
+        "Myanmar": {
+            "id": "MM",
+            "countryiso3code": "MMR",
+            "ppp": 407.064452164592,
+            "date": "2021"
+        },
+        "Namibia": {
+            "id": "NA",
+            "countryiso3code": "NAM",
+            "ppp": 7.12810420375597,
+            "date": "2021"
+        },
+        "Nauru": {
+            "id": "NR",
+            "countryiso3code": "NRU",
+            "ppp": 1.08701454961145,
+            "date": "2021"
+        },
+        "Nepal": {
+            "id": "NP",
+            "countryiso3code": "NPL",
+            "ppp": 33.8286876629537,
+            "date": "2021"
+        },
+        "Netherlands": {
+            "id": "NL",
+            "countryiso3code": "NLD",
+            "ppp": 0.769839,
+            "date": "2021"
+        },
+        "New Zealand": {
+            "id": "NZ",
+            "countryiso3code": "NZL",
+            "ppp": 1.486354,
+            "date": "2021"
+        },
+        "Nicaragua": {
+            "id": "NI",
+            "countryiso3code": "NIC",
+            "ppp": 11.6136597385787,
+            "date": "2021"
+        },
+        "Niger": {
+            "id": "NE",
+            "countryiso3code": "NER",
+            "ppp": 251.870961458807,
+            "date": "2021"
+        },
+        "Nigeria": {
+            "id": "NG",
+            "countryiso3code": "NGA",
+            "ppp": 152.56917370676,
+            "date": "2021"
+        },
+        "North Macedonia": {
+            "id": "MK",
+            "countryiso3code": "MKD",
+            "ppp": 19.545691174115,
+            "date": "2021"
+        },
+        "Norway": {
+            "id": "NO",
+            "countryiso3code": "NOR",
+            "ppp": 9.674744,
+            "date": "2021"
+        },
+        "Oman": {
+            "id": "OM",
+            "countryiso3code": "OMN",
+            "ppp": 0.178985613749341,
+            "date": "2020"
+        },
+        "Pakistan": {
+            "id": "PK",
+            "countryiso3code": "PAK",
+            "ppp": 41.920622920897,
+            "date": "2021"
+        },
+        "Palau": {
+            "id": "PW",
+            "countryiso3code": "PLW",
+            "ppp": 0.872856481645476,
+            "date": "2020"
+        },
+        "Panama": {
+            "id": "PA",
+            "countryiso3code": "PAN",
+            "ppp": 0.458218838809652,
+            "date": "2021"
+        },
+        "Papua New Guinea": {
+            "id": "PG",
+            "countryiso3code": "PNG",
+            "ppp": 2.30192913243074,
+            "date": "2021"
+        },
+        "Paraguay": {
+            "id": "PY",
+            "countryiso3code": "PRY",
+            "ppp": 2617.45515095332,
+            "date": "2021"
+        },
+        "Peru": {
+            "id": "PE",
+            "countryiso3code": "PER",
+            "ppp": 1.86897614593743,
+            "date": "2021"
+        },
+        "Philippines": {
+            "id": "PH",
+            "countryiso3code": "PHL",
+            "ppp": 19.1668847377707,
+            "date": "2021"
+        },
+        "Poland": {
+            "id": "PL",
+            "countryiso3code": "POL",
+            "ppp": 1.837204,
+            "date": "2021"
+        },
+        "Portugal": {
+            "id": "PT",
+            "countryiso3code": "PRT",
+            "ppp": 0.571596,
+            "date": "2021"
+        },
+        "Puerto Rico": {
+            "id": "PR",
+            "countryiso3code": "PRI",
+            "ppp": 0.915421957600614,
+            "date": "2020"
+        },
+        "Qatar": {
+            "id": "QA",
+            "countryiso3code": "QAT",
+            "ppp": 2.38495717570447,
+            "date": "2021"
+        },
+        "Romania": {
+            "id": "RO",
+            "countryiso3code": "ROU",
+            "ppp": 1.74596214426825,
+            "date": "2021"
+        },
+        "Russian Federation": {
+            "id": "RU",
+            "countryiso3code": "RUS",
+            "ppp": 27.331899,
+            "date": "2021"
+        },
+        "Rwanda": {
+            "id": "RW",
+            "countryiso3code": "RWA",
+            "ppp": 330.524530426937,
+            "date": "2021"
+        },
+        "Samoa": {
+            "id": "WS",
+            "countryiso3code": "WSM",
+            "ppp": 1.57721503497214,
+            "date": "2021"
+        },
+        "San Marino": {
+            "id": "SM",
+            "countryiso3code": "SMR",
+            "ppp": 0.668928344983762,
+            "date": "2020"
+        },
+        "Sao Tome and Principe": {
+            "id": "ST",
+            "countryiso3code": "STP",
+            "ppp": 11.495262193682,
+            "date": "2021"
+        },
+        "Saudi Arabia": {
+            "id": "SA",
+            "countryiso3code": "SAU",
+            "ppp": 1.78495840482481,
+            "date": "2021"
+        },
+        "Senegal": {
+            "id": "SN",
+            "countryiso3code": "SEN",
+            "ppp": 236.380142155163,
+            "date": "2021"
+        },
+        "Serbia": {
+            "id": "RS",
+            "countryiso3code": "SRB",
+            "ppp": 42.735864167868,
+            "date": "2021"
+        },
+        "Seychelles": {
+            "id": "SC",
+            "countryiso3code": "SYC",
+            "ppp": 7.54610937754719,
+            "date": "2021"
+        },
+        "Sierra Leone": {
+            "id": "SL",
+            "countryiso3code": "SLE",
+            "ppp": 3117.46354626525,
+            "date": "2021"
+        },
+        "Singapore": {
+            "id": "SG",
+            "countryiso3code": "SGP",
+            "ppp": 0.839571671840979,
+            "date": "2021"
+        },
+        "Sint Maarten (Dutch part)": {
+            "id": "SX",
+            "countryiso3code": "SXM",
+            "ppp": 1.44243518015729,
+            "date": "2018"
+        },
+        "Slovak Republic": {
+            "id": "SK",
+            "countryiso3code": "SVK",
+            "ppp": 0.540124,
+            "date": "2021"
+        },
+        "Slovenia": {
+            "id": "SI",
+            "countryiso3code": "SVN",
+            "ppp": 0.565944,
+            "date": "2021"
+        },
+        "Solomon Islands": {
+            "id": "SB",
+            "countryiso3code": "SLB",
+            "ppp": 7.06568822070318,
+            "date": "2021"
+        },
+        "Somalia": {
+            "id": "SO",
+            "countryiso3code": "SOM",
+            "ppp": 8912.1437723537,
+            "date": "2021"
+        },
+        "South Africa": {
+            "id": "ZA",
+            "countryiso3code": "ZAF",
+            "ppp": 7.16809666197253,
+            "date": "2021"
+        },
+        "Spain": {
+            "id": "ES",
+            "countryiso3code": "ESP",
+            "ppp": 0.624463,
+            "date": "2021"
+        },
+        "Sri Lanka": {
+            "id": "LK",
+            "countryiso3code": "LKA",
+            "ppp": 53.7034360648968,
+            "date": "2021"
+        },
+        "St. Kitts and Nevis": {
+            "id": "KN",
+            "countryiso3code": "KNA",
+            "ppp": 1.87464973303977,
+            "date": "2021"
+        },
+        "St. Lucia": {
+            "id": "LC",
+            "countryiso3code": "LCA",
+            "ppp": 1.83908748922242,
+            "date": "2021"
+        },
+        "St. Vincent and the Grenadines": {
+            "id": "VC",
+            "countryiso3code": "VCT",
+            "ppp": 1.53984712677939,
+            "date": "2021"
+        },
+        "Sudan": {
+            "id": "SD",
+            "countryiso3code": "SDN",
+            "ppp": 70.6847051546387,
+            "date": "2021"
+        },
+        "Suriname": {
+            "id": "SR",
+            "countryiso3code": "SUR",
+            "ppp": 5.71346959466057,
+            "date": "2021"
+        },
+        "Sweden": {
+            "id": "SE",
+            "countryiso3code": "SWE",
+            "ppp": 8.708853,
+            "date": "2021"
+        },
+        "Switzerland": {
+            "id": "CH",
+            "countryiso3code": "CHE",
+            "ppp": 1.104516,
+            "date": "2021"
+        },
+        "Tajikistan": {
+            "id": "TJ",
+            "countryiso3code": "TJK",
+            "ppp": 2.36572374268187,
+            "date": "2021"
+        },
+        "Tanzania": {
+            "id": "TZ",
+            "countryiso3code": "TZA",
+            "ppp": 890.581019580047,
+            "date": "2021"
+        },
+        "Thailand": {
+            "id": "TH",
+            "countryiso3code": "THA",
+            "ppp": 12.0410676957806,
+            "date": "2021"
+        },
+        "Timor-Leste": {
+            "id": "TL",
+            "countryiso3code": "TLS",
+            "ppp": 0.330005061993963,
+            "date": "2021"
+        },
+        "Togo": {
+            "id": "TG",
+            "countryiso3code": "TGO",
+            "ppp": 231.19257683534,
+            "date": "2021"
+        },
+        "Tonga": {
+            "id": "TO",
+            "countryiso3code": "TON",
+            "ppp": 1.59607809732146,
+            "date": "2020"
+        },
+        "Trinidad and Tobago": {
+            "id": "TT",
+            "countryiso3code": "TTO",
+            "ppp": 3.83432888301198,
+            "date": "2021"
+        },
+        "Tunisia": {
+            "id": "TN",
+            "countryiso3code": "TUN",
+            "ppp": 0.945825208332066,
+            "date": "2021"
+        },
+        "Turkiye": {
+            "id": "TR",
+            "countryiso3code": "TUR",
+            "ppp": 2.781851,
+            "date": "2021"
+        },
+        "Turkmenistan": {
+            "id": "TM",
+            "countryiso3code": "TKM",
+            "ppp": 1.64516322977735,
+            "date": "2019"
+        },
+        "Turks and Caicos Islands": {
+            "id": "TC",
+            "countryiso3code": "TCA",
+            "ppp": 1.02807044638403,
+            "date": "2021"
+        },
+        "Tuvalu": {
+            "id": "TV",
+            "countryiso3code": "TUV",
+            "ppp": 1.38595178476843,
+            "date": "2021"
+        },
+        "Uganda": {
+            "id": "UG",
+            "countryiso3code": "UGA",
+            "ppp": 1309.50548602194,
+            "date": "2021"
+        },
+        "Ukraine": {
+            "id": "UA",
+            "countryiso3code": "UKR",
+            "ppp": 9.2789257465561,
+            "date": "2021"
+        },
+        "United Arab Emirates": {
+            "id": "AE",
+            "countryiso3code": "ARE",
+            "ppp": 1.99585000583087,
+            "date": "2020"
+        },
+        "United Kingdom": {
+            "id": "GB",
+            "countryiso3code": "GBR",
+            "ppp": 0.692802,
+            "date": "2021"
+        },
+        "United States": {
+            "id": "US",
+            "countryiso3code": "USA",
+            "ppp": 1,
+            "date": "2021"
+        },
+        "Uruguay": {
+            "id": "UY",
+            "countryiso3code": "URY",
+            "ppp": 30.1031204446263,
+            "date": "2021"
+        },
+        "Uzbekistan": {
+            "id": "UZ",
+            "countryiso3code": "UZB",
+            "ppp": 2475.94969913475,
+            "date": "2021"
+        },
+        "Vanuatu": {
+            "id": "VU",
+            "countryiso3code": "VUT",
+            "ppp": 109.913609364436,
+            "date": "2021"
+        },
+        "Vietnam": {
+            "id": "VN",
+            "countryiso3code": "VNM",
+            "ppp": 7405.19001362939,
+            "date": "2021"
+        },
+        "West Bank and Gaza": {
+            "id": "PS",
+            "countryiso3code": "PSE",
+            "ppp": 0.591015082515553,
+            "date": "2021"
+        },
+        "Zambia": {
+            "id": "ZM",
+            "countryiso3code": "ZMB",
+            "ppp": 6.19046170598604,
+            "date": "2021"
+        },
+        "Zimbabwe": {
+            "id": "ZW",
+            "countryiso3code": "ZWE",
+            "ppp": 79.90261292803,
+            "date": "2021"
+        }
+    }
+}
