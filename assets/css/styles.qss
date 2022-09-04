@@ -1,28 +1,44 @@
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 #main {
-  background-color: antiquewhite;
+  background-color: #F0FFF0;
   margin: 0;
 }
 
+#symbol {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2F4F4F;
+  text-align: center;
+}
+
 #entryComponent {
-  background-color: beige;
-  border-radius: 10;
+  background-color: #F0FFF0;
 }
 
 #chooser {
-  background-color: antiquewhite;
-  height: 45;
+  combobox-popup: 0;
+  font-size: 15px;
+  padding: 0px 10px;
 }
 
 #chooser:hover {
-  background-color: blue;
+  font-weight: bold;
 }
 
 #valueInput {
-  font-size: 30px;
+  font-size: 45px;
+  color: #8FBC8F;
+  font-weight: bold;
+  background-color: #F0FFF0;
+  border: none;
 }
 
-QComboBox {
-  combobox-popup: 0;
-  font-size: 20px;
-  text-align: center;
+#valueInput:focus {
+  color: #006400;
 }

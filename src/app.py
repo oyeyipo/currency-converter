@@ -2,8 +2,6 @@
 PPP formular: sourceAmount / SourcePPP * TargetPPP
 """
 import sys
-from pathlib import Path
-from PySide6.QtCore import Qt, QMargins
 from PySide6.QtWidgets import (
     QApplication,
     QGraphicsDropShadowEffect,
@@ -12,7 +10,6 @@ from PySide6.QtWidgets import (
 )
 from conf import CSS_FILE
 from pages.home import HomePage
-from utilities.loader import pppdata
 
 
 class Convert(QWidget):
@@ -23,7 +20,7 @@ class Convert(QWidget):
     def initializeUI(self):
         # remove default title bar
         self.setMinimumSize(320, 124)
-        self.setWindowTitle("Currency converter")
+        self.setWindowTitle("PPP calculator")
         self.resize(420, self.height())
         self.setAutoFillBackground(True)
         self.setContentsMargins(0, 0, 0, 0)
