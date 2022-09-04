@@ -9,6 +9,7 @@ from PySide6.QtWidgets import (
     QLabel,
     QLineEdit,
     QVBoxLayout,
+    QHBoxLayout,
     QSizePolicy,
     QWidget,
 )
@@ -38,14 +39,7 @@ class EntryWidget(QWidget):
         amount_sp.setVerticalPolicy(QSizePolicy.Maximum)
         amount_sp.setVerticalStretch(0)
 
-        input_form = QFormLayout()
-        input_form.setFieldGrowthPolicy(
-            input_form.FieldGrowthPolicy.AllNonFixedFieldsGrow
-        )
-        # input_form.setFormAlignment(Qt.AlignHCenter | Qt.AlignTop)
-        # input_form.setLabelAlignment(Qt.AlignLeft)
-        input_form.setAlignment(Qt.AlignVCenter)
-        input_form.setSpacing(10)
+        input_form = QHBoxLayout()
 
         self.currency_symbol = QLabel()
         self.currency_symbol.setObjectName("symbol")
@@ -59,7 +53,8 @@ class EntryWidget(QWidget):
         # self.amount.setSizePolicy(amount_sp)
         self.amount.textEdited.connect(self.amount_changed)
 
-        input_form.addRow(self.currency_symbol, self.amount)
+        input_form.addWidget(self.currency_symbol, alignment=Qt.AlignCenter)
+        input_form.addWidget(self.amount)
 
         self.selector = QComboBox(self)
         self.selector.setObjectName("chooser")
