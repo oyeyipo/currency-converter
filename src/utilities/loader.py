@@ -40,7 +40,7 @@ def pppdata(file_output=False):
                 res[country]["date"] = item["date"]
 
     res = _add_countries_metadata(res)
-    output = {"lastupdated": str(date.today()), "data": res}
+    output = {"lastupdated": date.today().year, "data": res}
     if not file_output:
         return output
     json.dump(output, fp=open(PPP_FILE_CLEANED, "w"), indent=4)
