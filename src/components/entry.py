@@ -1,16 +1,14 @@
 from base64 import b64decode
-from typing import List
 
-from PySide6.QtCore import QSize, Qt
-from PySide6.QtGui import QIcon, QPixmap, QDoubleValidator
+from PySide6.QtCore import Qt, Signal
+from PySide6.QtGui import QDoubleValidator, QIcon, QPixmap
 from PySide6.QtWidgets import (
     QComboBox,
-    QFormLayout,
+    QHBoxLayout,
     QLabel,
     QLineEdit,
-    QVBoxLayout,
-    QHBoxLayout,
     QSizePolicy,
+    QVBoxLayout,
     QWidget,
 )
 from typing_extensions import Self
