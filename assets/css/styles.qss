@@ -25,10 +25,16 @@
   combobox-popup: 0;
   font-size: 15px;
   padding: 0px 10px;
+  border: none;
+  background-color: #8FBC8F ;
 }
 
 #chooser:hover {
   font-weight: bold;
+}
+
+#chooser::down-button {
+  border: 0px;
 }
 
 #valueInput {

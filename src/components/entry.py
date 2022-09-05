@@ -50,7 +50,6 @@ class EntryWidget(QWidget):
         validator = QDoubleValidator()
         validator.setDecimals(2)
         self.amount.setValidator(validator)
-        # self.amount.setSizePolicy(amount_sp)
         self.amount.textEdited.connect(self.amount_changed)
 
         input_form.addWidget(self.currency_symbol, alignment=Qt.AlignCenter)
@@ -66,7 +65,7 @@ class EntryWidget(QWidget):
         self.set_currency_symbol()
 
         layout.addLayout(input_form)
-        layout.addWidget(self.selector, stretch=0, alignment=Qt.AlignLeft)
+        layout.addWidget(self.selector, stretch=0, alignment=Qt.AlignCenter)
 
     def set_countries(self: Self) -> None:
         self.countries = get_pppdata()
@@ -96,6 +95,9 @@ class EntryWidget(QWidget):
         self.set_currency_symbol()
 
     def amount_changed(self, text: str):
+        self.commalize(text)
+
+    def commalize(self, text):
         main_amount, *fractional_amount = text.split(".")
         main_amount = main_amount.replace(",", "")
         main_amount = "{:,d}".format(int(main_amount)) if main_amount else ""
