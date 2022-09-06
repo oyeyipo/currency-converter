@@ -1,13 +1,15 @@
 import sys
+
 from PySide6.QtWidgets import (
     QApplication,
     QGraphicsDropShadowEffect,
-    QWidget,
     QVBoxLayout,
+    QWidget,
 )
+
+import rc_icons  # icons: don't remove
 from conf import CSS_FILE
 from pages.home import HomePage
-import rc_icons
 
 
 class Convert(QWidget):

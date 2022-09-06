@@ -1,3 +1,4 @@
+from decimal import Decimal
 from typing import List
 
 from PySide6.QtCore import Qt
@@ -6,8 +7,6 @@ from utilities.helper import commalize, decommalize
 from utilities.loader import get_pppdata
 
 from components.entry import EntryWidget
-
-from decimal import Decimal, ROUND_05UP
 
 
 class EntryList(QWidget):
@@ -21,23 +20,22 @@ class EntryList(QWidget):
         self.initializeUI()
 
     def initializeUI(self):
-
         sp = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
         self.setMinimumWidth(320)
         self.setMaximumWidth(420)
         self.setSizePolicy(sp)
 
-        layout = QVBoxLayout(self)
+        self.layout = QVBoxLayout(self)
 
         default_entry1 = EntryWidget()
         default_entry2 = EntryWidget()
 
-        self.ppp_entry_list = [default_entry1, default_entry2, EntryWidget()]
+        self.ppp_entry_list = [default_entry1, default_entry2]
 
         for entry in self.ppp_entry_list:
             entry.amountEdited.connect(self.entry_changed)
             entry.currencyChanged.connect(self.entry_changed)
-            layout.addWidget(entry)
+            self.layout.addWidget(entry)
 
     def entry_changed(self, amount: str) -> None:
         if amount:

@@ -12,8 +12,8 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 from typing_extensions import Self
-from utilities.loader import get_pppdata
 from utilities.helper import commalize
+from utilities.loader import get_pppdata
 
 HIEGHT = 45
 
