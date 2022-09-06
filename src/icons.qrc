@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+    <file alias="arrow-down">assets/images/keyboard_arrow_down.png</file>
+    <file alias="arrow-up">assets/images/keyboard_arrow_up.png</file>
+  </qresource>
+</RCC>

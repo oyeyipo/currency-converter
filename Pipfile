@@ -4,9 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-dev = "python src/app.py -style fusion"
+dev = "python src/app.py"
 lint = "black src"
 sort = "isort src"
+qrc = "pyside6-rcc src/icons.qrc -o src/rc_icons.py"
 
 [packages]
 pyside6 = "*"

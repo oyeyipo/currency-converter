@@ -7,6 +7,7 @@ from PySide6.QtWidgets import (
 )
 from conf import CSS_FILE
 from pages.home import HomePage
+import rc_icons
 
 
 class Convert(QWidget):
@@ -15,8 +16,8 @@ class Convert(QWidget):
         self.initializeUI()
 
     def initializeUI(self):
-        # remove default title bar
         self.setMinimumSize(320, 124)
+        # remove default title bar
         self.setWindowTitle("PPP calculator")
         self.resize(420, self.height())
         self.setAutoFillBackground(True)
@@ -38,6 +39,7 @@ class Convert(QWidget):
 
 
 app = QApplication(sys.argv)
+app.setStyle("Fusion")
 app.setStyleSheet(CSS_FILE.read_text())
 window = Convert()
 sys.exit(app.exec())

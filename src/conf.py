@@ -1,7 +1,7 @@
 import pathlib
 from PySide6.QtCore import QMargins
 
-BASE_DIR = pathlib.Path(__file__).parent.parent
+BASE_DIR = pathlib.Path(__file__).parent
 
 ASSETS_DIR = BASE_DIR.joinpath("assets")
 

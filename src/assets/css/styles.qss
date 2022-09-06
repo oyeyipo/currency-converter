@@ -26,15 +26,30 @@
   font-size: 15px;
   padding: 0px 10px;
   border: none;
-  background-color: #8FBC8F ;
+  background-color: #F0FFF0;
+  color: #2F4F4F;
+  font-weight: bold;
 }
 
 #chooser:hover {
   font-weight: bold;
 }
 
-#chooser::down-button {
-  border: 0px;
+#chooser::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: center left;
+  width: 25px;
+  border: none;
+}
+
+#chooser::down-arrow {
+  image: url(:/arrow-down);
+  width: 24px;
+  height: 24px;
+}
+
+#chooser::down-arrow:on {
+  image: url(:/arrow-up);
 }
 
 #valueInput {
