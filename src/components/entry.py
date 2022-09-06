@@ -13,11 +13,15 @@ from PySide6.QtWidgets import (
 )
 from typing_extensions import Self
 from utilities.loader import get_pppdata
+from utilities.helper import commalize
 
 HIEGHT = 45
 
 
 class EntryWidget(QWidget):
+    amountEdited = Signal(str)
+    currencyChanged = Signal(str)
+
     def __init__(self, parent=None, defaults: dict = {}) -> None:
         super().__init__(parent)
         self.defaults = defaults.copy()
@@ -60,7 +64,7 @@ class EntryWidget(QWidget):
         self.selector.currentTextChanged.connect(self.selector_text_changed)
 
         self.set_countries()
-        self.set_currency_symbol()
+        self._set_currency_symbol()
 
         layout.addLayout(input_form)
         layout.addWidget(self.selector, stretch=0, alignment=Qt.AlignCenter)
@@ -82,22 +86,22 @@ class EntryWidget(QWidget):
         image.loadFromData(blob)
         return image
 
-    def set_currency_symbol(self):
-        country_name, _ = self.selector.currentText().split(" - ")
+    def _set_currency_symbol(self):
+        country_name = self.get_country_name()
         country_symbol = self.countries[country_name]["currency"]["symbol"]
         if not country_symbol:
             country_symbol = self.countries[country_name]["currency"]["code"]
         self.currency_symbol.setText(country_symbol)
 
-    def selector_text_changed(self, text):
-        self.set_currency_symbol()
+    def selector_text_changed(self, text: str) -> None:
+        self._set_currency_symbol()
+        self.currencyChanged.emit(self.amount.text())
 
-    def amount_changed(self, text: str):
-        self.commalize(text)
+    def amount_changed(self, text: str) -> None:
+        c_amount = commalize(text)
+        self.amount.setText(c_amount)
+        self.amountEdited.emit(c_amount)
 
-    def commalize(self, text):
-        main_amount, *fractional_amount = text.split(".")
-        main_amount = main_amount.replace(",", "")
-        main_amount = "{:,d}".format(int(main_amount)) if main_amount else ""
-        amount = ".".join([main_amount] + fractional_amount)
-        self.amount.setText(amount)
+    def get_country_name(self) -> str:
+        name, _ = self.selector.currentText().split(" - ")
+        return name
