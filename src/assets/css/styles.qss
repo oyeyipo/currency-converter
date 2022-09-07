@@ -1,3 +1,16 @@
+/* 
+white: #F7F8F3
+black: #12130f
+
+gray dark: #50514d
+gray: #8A8b87
+gray light: #d0d1cc
+
+green darK: #37493e 
+green: #5b9279
+green light: #8fcb9b
+ */
+
 *, 
 *::before,
 *::after {
@@ -6,19 +19,19 @@
 }
 
 #main {
-  background-color: #F0FFF0;
+  background-color: #F7F8F3;
   margin: 0;
 }
 
 #symbol {
   font-size: 30px;
   font-weight: bold;
-  color: #2F4F4F;
+  color: #8A8b87;
   text-align: center;
 }
 
 #entryComponent {
-  background-color: #F0FFF0;
+  background-color: #F7F8F3;
 }
 
 #chooser {
@@ -26,13 +39,8 @@
   font-size: 15px;
   padding: 0px 10px;
   border: none;
-  background-color: #F0FFF0;
-  color: #2F4F4F;
-  font-weight: bold;
-}
-
-#chooser:hover {
-  font-weight: bold;
+  background-color: #F7F8F3;
+  color: #12130f;
 }
 
 #chooser::drop-down {
@@ -54,12 +62,12 @@
 
 #valueInput {
   font-size: 45px;
-  color: #8FBC8F;
+  color: #50514d;
   font-weight: bold;
-  background-color: #F0FFF0;
+  background-color: #F7F8F3;
   border: none;
 }
 
 #valueInput:focus {
-  color: #006400;
+  color: #12130f;
 }
