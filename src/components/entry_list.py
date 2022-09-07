@@ -34,19 +34,29 @@ class EntryList(QWidget):
 
         self.layout = QVBoxLayout(self)
 
-        default_entry1 = EntryWidget()
-        default_entry2 = EntryWidget()
+        default_entry1 = self.get_entry_widget()
+        default_entry2 = self.get_entry_widget()
 
         self.ppp_entry_list = [default_entry1, default_entry2]
 
-        entry_sp = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
-
         for entry in self.ppp_entry_list:
-            entry.amountEdited.connect(self.entry_changed)
-            entry.currencyChanged.connect(self.entry_changed)
-            entry_sp.setHeightForWidth(entry.sizePolicy().hasHeightForWidth())
-            entry.setSizePolicy(entry_sp)
             self.layout.addWidget(entry, 0)
+
+    def get_entry_widget(self) -> EntryWidget:
+        entry = EntryWidget()
+
+        sp = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        sp.setHeightForWidth(entry.sizePolicy().hasHeightForWidth())
+        entry.setSizePolicy(sp)
+
+        entry.amountEdited.connect(self.entry_changed)
+        entry.currencyChanged.connect(self.entry_changed)
+
+        return entry
+
+    def add_new_entry(self):
+        new_entry = self.get_entry_widget()
+        self.layout.addWidget(new_entry)
 
     def entry_changed(self, amount: str) -> None:
         if amount:
@@ -87,6 +97,10 @@ class EntryList(QWidget):
 class ContentContainer(QWidget):
     def __init__(self, parent=None):
         QWidget.__init__(self, parent)
+        self.setObjectName("contentContainer")
+        self.initializeUi()
+
+    def initializeUi(self):
         vbox = QVBoxLayout()
         hbox = QHBoxLayout(self)
 
@@ -100,12 +114,16 @@ class ContentContainer(QWidget):
         vbox.addWidget(self.entry_list, alignment=Qt.AlignHCenter)
 
         self.add_btn = QPushButton("+")
-        self.add_btn.setObjectName("add_btn")
+        self.add_btn.setObjectName("addBtn")
         add_btn_sp = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
         add_btn_sp.setHeightForWidth(self.add_btn.sizePolicy().hasHeightForWidth())
         self.add_btn.setSizePolicy(add_btn_sp)
+        self.add_btn.clicked.connect(self.add_new_entry)
 
         vbox.addWidget(self.add_btn, 0, alignment=Qt.AlignHCenter)
         vbox.setAlignment(Qt.AlignCenter)
 
         hbox.addLayout(vbox)
+
+    def add_new_entry(self):
+        self.entry_list.add_new_entry()
