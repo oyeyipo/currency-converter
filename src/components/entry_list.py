@@ -2,7 +2,14 @@ from decimal import Decimal
 from typing import List
 
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QVBoxLayout, QWidget
+from PySide6.QtWidgets import (
+    QHBoxLayout,
+    QVBoxLayout,
+    QPushButton,
+    QSizePolicy,
+    QVBoxLayout,
+    QWidget,
+)
 from utilities.helper import commalize, decommalize
 from utilities.loader import get_pppdata
 
@@ -32,10 +39,14 @@ class EntryList(QWidget):
 
         self.ppp_entry_list = [default_entry1, default_entry2]
 
+        entry_sp = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+
         for entry in self.ppp_entry_list:
             entry.amountEdited.connect(self.entry_changed)
             entry.currencyChanged.connect(self.entry_changed)
-            self.layout.addWidget(entry)
+            entry_sp.setHeightForWidth(entry.sizePolicy().hasHeightForWidth())
+            entry.setSizePolicy(entry_sp)
+            self.layout.addWidget(entry, 0)
 
     def entry_changed(self, amount: str) -> None:
         if amount:
@@ -76,5 +87,25 @@ class EntryList(QWidget):
 class ContentContainer(QWidget):
     def __init__(self, parent=None):
         QWidget.__init__(self, parent)
-        layout = QHBoxLayout(self)
-        layout.addWidget(EntryList(self))
+        vbox = QVBoxLayout()
+        hbox = QHBoxLayout(self)
+
+        self.entry_list = EntryList(self)
+        entry_list_sp = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Preferred)
+        entry_list_sp.setHeightForWidth(
+            self.entry_list.sizePolicy().hasHeightForWidth()
+        )
+        self.entry_list.setSizePolicy(entry_list_sp)
+
+        vbox.addWidget(self.entry_list, alignment=Qt.AlignHCenter)
+
+        self.add_btn = QPushButton("+")
+        self.add_btn.setObjectName("add_btn")
+        add_btn_sp = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        add_btn_sp.setHeightForWidth(self.add_btn.sizePolicy().hasHeightForWidth())
+        self.add_btn.setSizePolicy(add_btn_sp)
+
+        vbox.addWidget(self.add_btn, 0, alignment=Qt.AlignHCenter)
+        vbox.setAlignment(Qt.AlignCenter)
+
+        hbox.addLayout(vbox)
