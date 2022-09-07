@@ -37,7 +37,7 @@
 
 #chooser::drop-down {
   subcontrol-origin: padding;
-  subcontrol-position: center left;
+  subcontrol-position: center right;
   width: 25px;
   border: none;
 }
