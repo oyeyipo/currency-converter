@@ -67,7 +67,7 @@ class EntryWidget(QWidget):
         self._set_currency_symbol()
 
         layout.addLayout(input_form)
-        layout.addWidget(self.selector, stretch=0, alignment=Qt.AlignCenter)
+        layout.addWidget(self.selector, stretch=0, alignment=Qt.AlignLeft)
 
     def set_countries(self: Self) -> None:
         self.countries = get_pppdata()

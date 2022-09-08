@@ -36,6 +36,7 @@ green light: #8fcb9b
 
 #chooser {
   combobox-popup: 0;
+  width: 220px;
   font-size: 15px;
   padding: 0px 10px;
   border: none;
@@ -46,7 +47,6 @@ green light: #8fcb9b
 #chooser::drop-down {
   subcontrol-origin: padding;
   subcontrol-position: center right;
-  width: 25px;
   border: none;
 }
 
