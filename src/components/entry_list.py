@@ -9,9 +9,12 @@ from PySide6.QtWidgets import (
     QSizePolicy,
     QVBoxLayout,
     QWidget,
+    QScrollArea,
+    QLayout,
 )
 from utilities.helper import commalize, decommalize
 from utilities.loader import get_pppdata
+from conf import NO_MARGINS
 
 from components.entry import EntryWidget
 
@@ -21,18 +24,22 @@ class EntryList(QWidget):
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
+
         self.setAttribute(Qt.WA_StyledBackground)
         self.setObjectName("entryComponent")
         self.setAutoFillBackground(True)
+        self.setContentsMargins(NO_MARGINS)
+
         self.initializeUI()
 
     def initializeUI(self):
         sp = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
         self.setMinimumWidth(320)
-        self.setMaximumWidth(420)
         self.setSizePolicy(sp)
 
         self.layout = QVBoxLayout(self)
+        self.layout.setContentsMargins(NO_MARGINS)
+        self.layout.setSizeConstraint(QLayout.SetMinAndMaxSize)
 
         default_entry1 = self.get_entry_widget()
         default_entry2 = self.get_entry_widget()
@@ -102,28 +109,35 @@ class ContentContainer(QWidget):
 
     def initializeUi(self):
         vbox = QVBoxLayout()
+        vbox.setSizeConstraint(QLayout.SetMinAndMaxSize)
+        vbox.addStretch()
+
         hbox = QHBoxLayout(self)
 
-        self.entry_list = EntryList(self)
-        entry_list_sp = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Preferred)
-        entry_list_sp.setHeightForWidth(
-            self.entry_list.sizePolicy().hasHeightForWidth()
-        )
-        self.entry_list.setSizePolicy(entry_list_sp)
+        """ self.scroll = QScrollArea(self)
+        sp = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
+        sp.setHeightForWidth(self.scroll.sizePolicy().hasHeightForWidth())
+        self.scroll.setSizePolicy(sp)
+        self.scroll.setWidgetResizable(True) """
 
+        self.entry_list = EntryList()
+
+        # self.scroll.setWidget(self.entry_list)
         vbox.addWidget(self.entry_list, alignment=Qt.AlignHCenter)
 
-        self.add_btn = QPushButton("+")
+        """ self.add_btn = QPushButton("+")
         self.add_btn.setObjectName("addBtn")
         add_btn_sp = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
         add_btn_sp.setHeightForWidth(self.add_btn.sizePolicy().hasHeightForWidth())
         self.add_btn.setSizePolicy(add_btn_sp)
-        self.add_btn.clicked.connect(self.add_new_entry)
+        self.add_btn.clicked.connect(self.add_new_entry) """
 
-        vbox.addWidget(self.add_btn, 0, alignment=Qt.AlignHCenter)
-        vbox.setAlignment(Qt.AlignCenter)
+        # vbox.addWidget(self.add_btn, 0, alignment=Qt.AlignHCenter)
+        vbox.addStretch()
 
+        hbox.addStretch()
         hbox.addLayout(vbox)
+        hbox.addStretch()
 
     def add_new_entry(self):
         self.entry_list.add_new_entry()
