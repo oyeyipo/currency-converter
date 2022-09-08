@@ -15,8 +15,6 @@ from typing_extensions import Self
 from utilities.helper import commalize
 from utilities.loader import get_pppdata
 
-HIEGHT = 45
-
 
 class EntryWidget(QWidget):
     amountEdited = Signal(str)
